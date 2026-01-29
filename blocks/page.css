@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+}
+
+.page {
+  max-width: 1280px;
+  background-color: black;
+  color: white;
+  margin: auto;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
