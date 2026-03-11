@@ -144,5 +144,52 @@
         <p class="footer__copyright">&#x00a9; 2026 Around The U.S.</p>
       </footer>
     </div>
+    <div class="popup">
+      <div class="popup__container">
+        <button
+          type="button"
+          class="popup__button popup__button_close"
+        ></button>
+
+        <form class="popup__form popup__form-edit" novalidate>
+          <h2 class="popup__subtitle">Editar perfil</h2>
+
+          <fieldset class="popup__content">
+            <label class="popup__field"
+              ><input
+                type="text"
+                class="popup__input popup__input_name"
+                placeholder="Nombre"
+                id="name-input"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+            </label>
+
+            <label class="popup__field">
+              <input
+                type="text"
+                class="popup__input popup__input_about"
+                placeholder="Acerca de mí"
+                id="about-input"
+                minlength="2"
+                maxlength="200"
+                required
+              />
+            </label>
+          </fieldset>
+
+          <button
+            type="submit"
+            class="popup__button popup__button_save popup__button_disabled"
+            disabled
+          >
+            Guardar
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="./page/index.js"></script>
   </body>
 </html>
