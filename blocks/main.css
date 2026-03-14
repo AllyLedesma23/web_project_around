@@ -145,3 +145,54 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .main__profile {
+    max-width: 282px;
+    justify-items: center;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px repeat(2, 50px);
+    grid-row-gap: 30px;
+    padding-bottom: 36px;
+  }
+
+  .main__profile-image {
+    max-height: 120px;
+  }
+
+  .main__content-info {
+    width: 282px;
+    height: 50px;
+    grid-column: 1 / 2;
+    grid-row: 2;
+    grid-template-rows: 22px 14px;
+    grid-row-gap: 14px;
+  }
+
+  .main__info_name {
+    font-size: 22px;
+    padding-top: 0pc;
+    text-align: center;
+  }
+
+  .main__info_profession {
+    font-size: 14px;
+    justify-self: center;
+  }
+
+  .main__button_edit {
+    width: 18px;
+    height: 18px;
+    margin: 0 0 0 5px;
+  }
+
+  .main__button_add {
+    grid-row: 3;
+    width: 100%;
+  }
+
+  .main__gallery {
+    max-width: 282px;
+  }
+}
